@@ -14,19 +14,24 @@ export const Route = createFileRoute("/services")({
 
 const services = [
   {
+    name: "Page Management",
+    desc: "Managing your social accounts so your brand stays active, organised and consistent.",
+    items: ["Daily posting", "Content scheduling", "Brand consistency", "Profile upkeep"],
+  },
+  {
+    name: "Community Management",
+    desc: "Engaging with your audience through comments and DMs to build a loyal community.",
+    items: ["Comment replies", "DM responses", "Follower nurturing", "Relationship building"],
+  },
+  {
     name: "Content Creation",
-    desc: "On-brand graphics, reels and carousels designed to stop the scroll.",
-    items: ["Feed graphics & carousels", "Reels editing", "Story templates", "Caption writing"],
+    desc: "Designing engaging posts and short-form content that attract attention and spark interaction.",
+    items: ["Feed graphics", "Reels & short-form", "Caption writing", "Story content"],
   },
   {
-    name: "Social Media Management",
-    desc: "Full-service monthly management — planning, posting and engaging on your behalf.",
-    items: ["Monthly content calendar", "Scheduling & posting", "Community engagement", "Monthly reports"],
-  },
-  {
-    name: "Strategy & Audits",
-    desc: "A clear roadmap for your channels — what to post, when and why.",
-    items: ["Profile audit", "Content pillars", "Hashtag strategy", "Growth roadmap"],
+    name: "Page Audit & Revamp",
+    desc: "Reviewing and optimising your profile to improve branding, visibility and presentation.",
+    items: ["Bio optimisation", "Visual refresh", "Keyword strategy", "Growth roadmap"],
   },
 ];
 
@@ -41,7 +46,7 @@ function Services() {
         </p>
       </div>
 
-      <div className="mt-16 grid gap-6 md:grid-cols-3">
+      <div className="mt-16 grid gap-6 md:grid-cols-2">
         {services.map((s, i) => (
           <div
             key={s.name}
