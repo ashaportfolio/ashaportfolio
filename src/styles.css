@@ -63,30 +63,31 @@
 
 :root {
   --radius: 0.75rem;
-  /* Soft neutral palette: cream, sand, warm taupe, deep espresso */
-  --background: oklch(0.985 0.012 80);
-  --foreground: oklch(0.28 0.025 50);
-  --card: oklch(0.97 0.015 80);
-  --card-foreground: oklch(0.28 0.025 50);
-  --popover: oklch(0.985 0.012 80);
-  --popover-foreground: oklch(0.28 0.025 50);
-  --primary: oklch(0.42 0.04 50);
-  --primary-foreground: oklch(0.985 0.012 80);
-  --secondary: oklch(0.93 0.025 75);
-  --secondary-foreground: oklch(0.32 0.03 50);
-  --muted: oklch(0.94 0.018 80);
-  --muted-foreground: oklch(0.5 0.02 60);
-  --accent: oklch(0.82 0.06 60);
-  --accent-foreground: oklch(0.28 0.025 50);
+  /* Warm brown palette: cream, caramel, cocoa, deep espresso */
+  --background: oklch(0.97 0.018 75);
+  --foreground: oklch(0.25 0.04 45);
+  --card: oklch(0.95 0.022 70);
+  --card-foreground: oklch(0.25 0.04 45);
+  --popover: oklch(0.97 0.018 75);
+  --popover-foreground: oklch(0.25 0.04 45);
+  --primary: oklch(0.38 0.07 45);            /* deep cocoa */
+  --primary-foreground: oklch(0.97 0.018 75);
+  --secondary: oklch(0.88 0.05 65);          /* warm sand */
+  --secondary-foreground: oklch(0.28 0.05 45);
+  --muted: oklch(0.92 0.025 70);
+  --muted-foreground: oklch(0.45 0.04 50);
+  --accent: oklch(0.7 0.11 50);              /* caramel */
+  --accent-foreground: oklch(0.22 0.04 45);
   --destructive: oklch(0.577 0.18 27);
   --destructive-foreground: oklch(0.984 0.003 247.858);
-  --border: oklch(0.9 0.018 75);
-  --input: oklch(0.9 0.018 75);
-  --ring: oklch(0.6 0.04 60);
-  --gradient-soft: linear-gradient(135deg, oklch(0.97 0.02 80), oklch(0.92 0.03 65));
-  --gradient-warm: linear-gradient(135deg, oklch(0.88 0.04 70), oklch(0.82 0.06 55));
-  --shadow-soft: 0 10px 40px -15px oklch(0.42 0.04 50 / 0.15);
-  --shadow-card: 0 4px 20px -8px oklch(0.42 0.04 50 / 0.1);
+  --border: oklch(0.85 0.03 65);
+  --input: oklch(0.88 0.03 65);
+  --ring: oklch(0.55 0.08 55);
+  --gradient-soft: linear-gradient(135deg, oklch(0.95 0.03 75), oklch(0.85 0.07 55));
+  --gradient-warm: linear-gradient(135deg, oklch(0.78 0.1 55), oklch(0.55 0.12 40));
+  --gradient-mocha: linear-gradient(135deg, oklch(0.45 0.08 45), oklch(0.3 0.05 40));
+  --shadow-soft: 0 10px 40px -15px oklch(0.35 0.07 45 / 0.25);
+  --shadow-card: 0 6px 24px -10px oklch(0.35 0.07 45 / 0.18);
   --font-serif: "Cormorant Garamond", "Playfair Display", Georgia, serif;
   --font-sans: "Inter", system-ui, sans-serif;
   --chart-1: oklch(0.646 0.222 41.116);
