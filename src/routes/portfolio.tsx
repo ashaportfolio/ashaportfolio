@@ -240,10 +240,10 @@ function Portfolio() {
               className="transition hover:-translate-y-1"
               style={{ transform: `rotate(${i === 0 ? -3 : i === 2 ? 3 : 0}deg)` }}
             >
-              <PhoneMockup {...s} />
-              <div className="mt-5 text-center">
+              <div className="mb-5 text-center">
                 <h3 className="font-serif text-lg text-foreground">{s.title}</h3>
               </div>
+              <PhoneMockup {...s} />
             </div>
           ))}
         </div>
