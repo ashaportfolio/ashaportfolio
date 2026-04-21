@@ -149,42 +149,8 @@ function Portfolio() {
           <p className="text-sm uppercase tracking-[0.25em] text-muted-foreground">Insights · 60 days</p>
           <h2 className="mt-3 font-serif text-3xl md:text-4xl text-foreground">Expected results</h2>
         </div>
-        <div className="mt-10 grid gap-5 sm:grid-cols-3">
-          {[
-            { label: "Followers", from: "300", to: "900+", change: "+200%", icon: "👥" },
-            { label: "Account reach", from: "12K", to: "36K", change: "3× growth", icon: "📈" },
-            { label: "Engagement rate", from: "2.1%", to: "3.4%", change: "+60%", icon: "❤️" },
-          ].map((r) => (
-            <div
-              key={r.label}
-              className="rounded-3xl border border-border/60 bg-card p-6 shadow-[var(--shadow-card)]"
-            >
-              <div className="flex items-center justify-between">
-                <div className="text-xs uppercase tracking-wider text-muted-foreground">{r.label}</div>
-                <div className="text-xl" aria-hidden>{r.icon}</div>
-              </div>
-              <div className="mt-4 flex items-baseline gap-2">
-                <span className="font-serif text-4xl text-foreground">{r.to}</span>
-                <span className="text-xs text-muted-foreground line-through">{r.from}</span>
-              </div>
-              <div className="mt-4 flex items-center gap-2">
-                <span className="inline-flex items-center gap-1 rounded-full bg-[oklch(0.92_0.06_140)] px-2.5 py-1 text-[10px] font-semibold text-[oklch(0.35_0.08_140)]">
-                  ▲ {r.change}
-                </span>
-                <span className="text-[10px] text-muted-foreground uppercase tracking-wider">vs. last 60 days</span>
-              </div>
-              {/* Mini bar chart */}
-              <div className="mt-5 flex h-12 items-end gap-1">
-                {[30, 42, 38, 55, 48, 70, 65, 82, 78, 95].map((h, i) => (
-                  <div
-                    key={i}
-                    className="flex-1 rounded-sm bg-gradient-to-t from-[oklch(0.82_0.06_60)] to-[oklch(0.7_0.1_55)]"
-                    style={{ height: `${h}%` }}
-                  />
-                ))}
-              </div>
-            </div>
-          ))}
+        <div className="mt-10 flex justify-center">
+          <InsightsPhone />
         </div>
       </section>
 
