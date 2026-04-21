@@ -13,16 +13,15 @@ export function SiteFooter() {
           <div className="flex flex-col gap-1 text-muted-foreground">
             <Link to="/about" className="hover:text-foreground">About</Link>
             <Link to="/services" className="hover:text-foreground">Services</Link>
-            <Link to="/portfolio" className="hover:text-foreground">Portfolio</Link>
+            <Link to="/portfolio" className="hover:text-foreground">Case Study</Link>
             <Link to="/contact" className="hover:text-foreground">Contact</Link>
           </div>
         </div>
         <div className="space-y-2">
           <p className="text-foreground font-medium">Connect</p>
           <div className="flex flex-col gap-1 text-muted-foreground">
-            <a href="mailto:hello@ashatapkigen.com" className="hover:text-foreground">hello@ashatapkigen.com</a>
-            <a href="#" className="hover:text-foreground">Instagram</a>
-            <a href="#" className="hover:text-foreground">LinkedIn</a>
+            <a href="mailto:ashatapkigensmm@gmail.com" className="hover:text-foreground">ashatapkigensmm@gmail.com</a>
+            <a href="tel:+254710635834" className="hover:text-foreground">+254 710 635 834</a>
           </div>
         </div>
       </div>
