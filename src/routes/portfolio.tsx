@@ -18,10 +18,79 @@ export const Route = createFileRoute("/portfolio")({
 });
 
 const samples = [
-  { src: work1, title: "Gentle Routine", caption: "POV: a gentle routine that actually works ✨" },
-  { src: work2, title: "Skin Myths", caption: "5 things to stop doing in your PM routine" },
-  { src: work3, title: "Hydration Hook", caption: "Your skin is thirsty — type THIRSTY to grab the serum" },
+  {
+    src: work1,
+    title: "Gentle Routine",
+    caption: "POV: a gentle routine that actually works ✨ Self-care shouldn't be stressful — just hydration and gentle renewal.",
+    likes: "1,284",
+  },
+  {
+    src: work2,
+    title: "Skin Myths",
+    caption: "5 things to stop doing in your PM routine ❌ Stop wasting product on these myths and start seeing real results.",
+    likes: "2,012",
+  },
+  {
+    src: work3,
+    title: "Hydration Hook",
+    caption: "Your skin is thirsty 💔 Type THIRSTY to grab the Hydro-Boost Serum and quench it for good.",
+    likes: "956",
+  },
 ];
+
+function PhoneMockup({ src, title, caption, likes }: { src: string; title: string; caption: string; likes: string }) {
+  return (
+    <div className="relative mx-auto w-full max-w-[260px]">
+      {/* Phone shell */}
+      <div className="relative rounded-[2.5rem] bg-foreground/95 p-2 shadow-[0_30px_60px_-20px_oklch(0.42_0.04_50/0.35)] ring-1 ring-foreground/10">
+        {/* Screen */}
+        <div className="relative overflow-hidden rounded-[2rem] bg-background">
+          {/* Notch */}
+          <div className="absolute left-1/2 top-1.5 z-20 h-5 w-20 -translate-x-1/2 rounded-full bg-foreground/95" />
+          {/* Status bar */}
+          <div className="flex items-center justify-between px-5 pt-2 pb-1.5 text-[10px] font-medium text-foreground">
+            <span>9:41</span>
+            <span className="opacity-60">•••</span>
+          </div>
+          {/* IG header */}
+          <div className="flex items-center justify-between border-b border-border/60 px-3 py-2">
+            <div className="flex items-center gap-2">
+              <div className="h-7 w-7 rounded-full bg-gradient-to-tr from-[oklch(0.7_0.18_30)] via-[oklch(0.65_0.22_350)] to-[oklch(0.6_0.2_290)] p-[2px]">
+                <div className="h-full w-full rounded-full bg-background p-[2px]">
+                  <div className="h-full w-full rounded-full bg-[oklch(0.85_0.05_55)]" />
+                </div>
+              </div>
+              <div className="leading-tight">
+                <div className="text-[11px] font-semibold text-foreground">lushglow.skin</div>
+                <div className="text-[9px] text-muted-foreground">Sponsored</div>
+              </div>
+            </div>
+            <span className="text-foreground/70 text-base leading-none">⋯</span>
+          </div>
+          {/* Image */}
+          <img src={src} alt={title} className="aspect-square w-full object-cover" loading="lazy" />
+          {/* Action row */}
+          <div className="flex items-center justify-between px-3 pt-2 pb-1 text-foreground">
+            <div className="flex items-center gap-3 text-[15px]">
+              <span aria-hidden>♡</span>
+              <span aria-hidden>💬</span>
+              <span aria-hidden>↗</span>
+            </div>
+            <span aria-hidden className="text-[15px]">⌘</span>
+          </div>
+          <div className="px-3 pb-3 text-[10px] leading-snug text-foreground">
+            <div className="font-semibold">{likes} likes</div>
+            <div className="mt-0.5 text-foreground/80">
+              <span className="font-semibold">lushglow.skin</span>{" "}
+              <span className="text-foreground/70">{caption}</span>
+            </div>
+            <div className="mt-1 text-muted-foreground text-[9px] uppercase tracking-wider">2 hours ago</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
 
 function Portfolio() {
   return (
@@ -94,16 +163,22 @@ function Portfolio() {
         <div className="text-center max-w-2xl mx-auto">
           <p className="text-sm uppercase tracking-[0.25em] text-muted-foreground">Sample work</p>
           <h2 className="mt-3 font-serif text-4xl text-foreground">Content I created</h2>
+          <p className="mt-4 text-muted-foreground">
+            A peek at how the LushGlow content lives on the feed.
+          </p>
         </div>
-        <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {samples.map((s) => (
-            <article key={s.title} className="rounded-3xl overflow-hidden border border-border/60 bg-card shadow-[var(--shadow-card)] transition hover:-translate-y-1">
-              <img src={s.src} alt={s.title} className="aspect-[4/5] w-full object-cover" loading="lazy" />
-              <div className="p-5">
+        <div className="mt-14 grid gap-12 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8">
+          {samples.map((s, i) => (
+            <div
+              key={s.title}
+              className="transition hover:-translate-y-1"
+              style={{ transform: `rotate(${i === 0 ? -3 : i === 2 ? 3 : 0}deg)` }}
+            >
+              <PhoneMockup {...s} />
+              <div className="mt-5 text-center">
                 <h3 className="font-serif text-lg text-foreground">{s.title}</h3>
-                <p className="mt-1 text-sm text-muted-foreground">{s.caption}</p>
               </div>
-            </article>
+            </div>
           ))}
         </div>
       </section>
