@@ -74,14 +74,16 @@ function Index() {
       </section>
 
       {/* CTA */}
-      <section className="mx-auto max-w-4xl px-6 py-20 text-center">
-        <h2 className="font-serif text-4xl md:text-5xl text-foreground">Ready to grow with intention?</h2>
-        <p className="mt-4 text-muted-foreground max-w-xl mx-auto">
-          Let's build a social presence that feels as good as it looks.
-        </p>
-        <Link to="/contact" className="inline-flex mt-8 rounded-full bg-primary text-primary-foreground px-8 py-3 text-sm hover:opacity-90 transition">
-          Start a conversation
-        </Link>
+      <section className="mx-auto max-w-5xl px-6 py-20">
+        <div className="rounded-3xl px-6 py-16 text-center text-primary-foreground shadow-[var(--shadow-soft)]" style={{ background: "var(--gradient-mocha)" }}>
+          <h2 className="font-serif text-4xl md:text-5xl">Ready to grow with intention?</h2>
+          <p className="mt-4 max-w-xl mx-auto opacity-80">
+            Let's build a social presence that feels as good as it looks.
+          </p>
+          <Link to="/contact" className="inline-flex mt-8 rounded-full bg-background text-foreground px-8 py-3 text-sm hover:opacity-90 transition">
+            Start a conversation
+          </Link>
+        </div>
       </section>
     </div>
   );

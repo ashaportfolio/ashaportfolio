@@ -188,7 +188,7 @@ function Portfolio() {
       </div>
 
       {/* Brand card */}
-      <div className="mt-14 rounded-3xl bg-card border border-border/60 p-8 md:p-10 shadow-[var(--shadow-card)] grid gap-8 md:grid-cols-[180px_1fr] items-center">
+      <div className="mt-14 rounded-3xl border border-border/60 p-8 md:p-10 shadow-[var(--shadow-card)] grid gap-8 md:grid-cols-[180px_1fr] items-center" style={{ background: "var(--gradient-soft)" }}>
         <img src={logo} alt="LushGlow Skincare logo" className="w-40 h-40 object-contain rounded-2xl bg-background/60 p-4 mx-auto" />
         <div>
           <h2 className="font-serif text-2xl text-foreground">The mission</h2>

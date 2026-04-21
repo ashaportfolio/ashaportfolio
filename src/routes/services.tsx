@@ -50,10 +50,11 @@ function Services() {
         {services.map((s, i) => (
           <div
             key={s.name}
-            className="rounded-3xl bg-card border border-border/60 p-8 shadow-[var(--shadow-card)] flex flex-col"
+            className="rounded-3xl bg-card border border-border/60 p-8 shadow-[var(--shadow-card)] flex flex-col relative overflow-hidden"
           >
-            <div className="text-xs uppercase tracking-widest text-muted-foreground">0{i + 1}</div>
-            <h3 className="mt-3 font-serif text-2xl text-foreground">{s.name}</h3>
+            <div className="absolute -top-10 -right-10 w-32 h-32 rounded-full opacity-30" style={{ background: "var(--gradient-warm)" }} />
+            <div className="relative text-xs uppercase tracking-widest text-accent">0{i + 1}</div>
+            <h3 className="relative mt-3 font-serif text-2xl text-foreground">{s.name}</h3>
             <p className="mt-3 text-muted-foreground leading-relaxed">{s.desc}</p>
             <ul className="mt-6 space-y-2 text-sm text-foreground/80">
               {s.items.map((it) => (
