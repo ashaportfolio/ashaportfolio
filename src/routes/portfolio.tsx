@@ -67,8 +67,10 @@ function PhoneMockup({ src, title, caption, likes }: { src: string; title: strin
             </div>
             <span className="text-foreground/70 text-base leading-none">⋯</span>
           </div>
-          {/* Image */}
-          <img src={src} alt={title} className="aspect-square w-full object-cover" loading="lazy" />
+          {/* Image — use object-contain so text in the post is never cropped */}
+          <div className="bg-[oklch(0.94_0.02_75)] flex items-center justify-center">
+            <img src={src} alt={title} className="w-full h-auto object-contain" loading="lazy" />
+          </div>
           {/* Action row */}
           <div className="flex items-center justify-between px-3 pt-2 pb-1 text-foreground">
             <div className="flex items-center gap-3 text-[15px]">
