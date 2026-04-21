@@ -29,23 +29,40 @@ function About() {
         <h1 className="mt-3 font-serif text-5xl text-foreground">Hi, I'm Asha.</h1>
         <div className="mt-6 space-y-5 text-muted-foreground leading-relaxed text-lg">
           <p>
-            I'm a social media manager who believes great content starts with a clear story.
-            I work with small businesses, creators and growing brands to build an online
-            presence that feels intentional, beautiful and true to who they are.
+            I'm a social media manager helping brands grow their online presence and build
+            engaged communities through strategic content, consistent page management and
+            meaningful audience engagement.
           </p>
           <p>
-            From content strategy and planning to caption writing, design and community
-            management — I take care of the day-to-day so you can focus on what you do best.
-          </p>
-          <p>
-            My approach is calm, organised and collaborative. No vanity metrics, no copy-paste
-            templates — just thoughtful work that helps your brand grow.
+            I've worked with brands like Thriftvibe254, creating content, managing posts
+            and engaging with followers to improve visibility online. I'm also certified
+            through Social Media Management Africa (Nov 2025).
           </p>
         </div>
+
+        <div className="mt-10 grid gap-6 sm:grid-cols-2">
+          <div>
+            <h3 className="font-serif text-xl text-foreground">Hard skills</h3>
+            <ul className="mt-3 space-y-1.5 text-muted-foreground">
+              <li>— Social Media Management</li>
+              <li>— Community Management</li>
+              <li>— Content Creation</li>
+            </ul>
+          </div>
+          <div>
+            <h3 className="font-serif text-xl text-foreground">Soft skills</h3>
+            <ul className="mt-3 space-y-1.5 text-muted-foreground">
+              <li>— Communication</li>
+              <li>— Time Management</li>
+              <li>— Customer Engagement</li>
+            </ul>
+          </div>
+        </div>
+
         <div className="mt-10 grid grid-cols-3 gap-4">
           {[
-            { n: "20+", l: "Brands supported" },
-            { n: "3 yrs", l: "In social media" },
+            { n: "4 mo", l: "At Thriftvibe254" },
+            { n: "5", l: "Step strategy" },
             { n: "100%", l: "Made with care" },
           ].map((s) => (
             <div key={s.l} className="rounded-2xl bg-card border border-border/60 p-5 text-center">

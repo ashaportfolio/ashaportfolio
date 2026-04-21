@@ -26,14 +26,14 @@ function Index() {
               An invitation to <em className="not-italic text-accent-foreground/80">elevate</em> your brand.
             </h1>
             <p className="mt-6 text-lg text-muted-foreground max-w-md leading-relaxed">
-              I help brands tell their story online — with strategy, beautiful content, and a community that actually shows up.
+              I'm Asha — I help brands grow their online presence and build engaged communities through strategic content, consistent page management and meaningful audience engagement.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link to="/contact" className="rounded-full bg-primary text-primary-foreground px-7 py-3 text-sm hover:opacity-90 transition">
                 Work with me
               </Link>
               <Link to="/portfolio" className="rounded-full border border-border bg-background/60 px-7 py-3 text-sm text-foreground hover:bg-background transition">
-                View portfolio
+                View case study
               </Link>
             </div>
           </div>
@@ -41,7 +41,7 @@ function Index() {
             <div className="absolute -inset-4 rounded-3xl" style={{ background: "var(--gradient-warm)", filter: "blur(40px)", opacity: 0.4 }} />
             <img
               src={heroImg}
-              alt="Aesthetic flat lay with notebook, coffee and phone showing Instagram"
+              alt="Asha Tapkigen, social media manager"
               width={1536}
               height={1152}
               className="relative rounded-3xl object-cover w-full aspect-[4/3] shadow-[var(--shadow-soft)]"
@@ -50,16 +50,23 @@ function Index() {
         </div>
       </section>
 
-      {/* Highlights */}
+      {/* Process */}
       <section className="mx-auto max-w-6xl px-6 py-20">
-        <div className="grid gap-6 md:grid-cols-3">
+        <div className="text-center max-w-2xl mx-auto mb-14">
+          <p className="text-sm uppercase tracking-[0.25em] text-muted-foreground">My process</p>
+          <h2 className="mt-3 font-serif text-4xl md:text-5xl text-foreground">A simple 5-step strategy</h2>
+        </div>
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {[
-            { k: "Strategy", v: "Content plans rooted in your brand voice and goals." },
-            { k: "Creative", v: "Soft, scroll-stopping visuals and captions that convert." },
-            { k: "Community", v: "Genuine engagement that turns followers into clients." },
+            { n: "01", k: "Profile Audit", v: "I review your social profile to spot gaps in branding, content and visibility." },
+            { n: "02", k: "Content Strategy", v: "I build a content plan rooted in your brand goals, audience interests and industry trends." },
+            { n: "03", k: "Content Creation", v: "I design engaging posts, reels and captions that capture attention and spark interaction." },
+            { n: "04", k: "Community Management", v: "I respond to comments and DMs to build stronger, more loyal relationships with your audience." },
+            { n: "05", k: "Optimization", v: "I monitor performance and adjust the strategy to improve reach and steady growth." },
           ].map((c) => (
             <div key={c.k} className="rounded-2xl bg-card p-8 border border-border/60 shadow-[var(--shadow-card)]">
-              <h3 className="font-serif text-2xl text-foreground">{c.k}</h3>
+              <div className="text-xs uppercase tracking-widest text-muted-foreground">{c.n}</div>
+              <h3 className="mt-2 font-serif text-2xl text-foreground">{c.k}</h3>
               <p className="mt-3 text-muted-foreground leading-relaxed">{c.v}</p>
             </div>
           ))}
