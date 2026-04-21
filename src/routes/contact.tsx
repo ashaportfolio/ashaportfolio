@@ -28,7 +28,7 @@ function Contact() {
           onSubmit={(e) => {
             e.preventDefault();
             const data = new FormData(e.currentTarget);
-            window.location.href = `mailto:hello@ashatapkigen.com?subject=New%20enquiry%20from%20${encodeURIComponent(String(data.get("name") || ""))}&body=${encodeURIComponent(String(data.get("message") || ""))}`;
+            window.location.href = `mailto:ashatapkigensmm@gmail.com?subject=New%20enquiry%20from%20${encodeURIComponent(String(data.get("name") || ""))}&body=${encodeURIComponent(String(data.get("message") || ""))}`;
           }}
         >
           <div className="grid gap-4 sm:grid-cols-2">
@@ -54,12 +54,20 @@ function Contact() {
           </button>
         </form>
 
-        <p className="mt-8 text-sm text-muted-foreground">
-          Or email me directly at{" "}
-          <a href="mailto:hello@ashatapkigen.com" className="text-foreground underline underline-offset-4">
-            hello@ashatapkigen.com
-          </a>
-        </p>
+        <div className="mt-10 grid gap-3 text-sm text-muted-foreground">
+          <p>
+            Or email me directly at{" "}
+            <a href="mailto:ashatapkigensmm@gmail.com" className="text-foreground underline underline-offset-4">
+              ashatapkigensmm@gmail.com
+            </a>
+          </p>
+          <p>
+            Call or WhatsApp:{" "}
+            <a href="tel:+254710635834" className="text-foreground underline underline-offset-4">
+              +254 710 635 834
+            </a>
+          </p>
+        </div>
       </div>
     </div>
   );
