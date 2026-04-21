@@ -5,18 +5,6 @@ import work1 from "@/assets/work-gentle-routine.jpg";
 import work2 from "@/assets/work-skin-myths.jpg";
 import work3 from "@/assets/work-thirsty.jpg";
 
-export const Route = createFileRoute("/portfolio")({
-  head: () => ({
-    meta: [
-      { title: "Case Study — LushGlow Skincare | Asha Tapkigen" },
-      { name: "description", content: "A social media strategy case study for LushGlow Skincare — building consistent branding, visibility and engagement." },
-      { property: "og:title", content: "Case Study — LushGlow Skincare" },
-      { property: "og:description", content: "Strategy, content and growth plan for a sensitive-skin skincare brand." },
-    ],
-  }),
-  component: Portfolio,
-});
-
 const samples = [
   {
     src: work1,
@@ -282,3 +270,15 @@ function Portfolio() {
     </div>
   );
 }
+
+export const Route = createFileRoute("/portfolio")({
+  head: () => ({
+    meta: [
+      { title: "Case Study — LushGlow Skincare | Asha Tapkigen" },
+      { name: "description", content: "A social media strategy case study for LushGlow Skincare — building consistent branding, visibility and engagement." },
+      { property: "og:title", content: "Case Study — LushGlow Skincare" },
+      { property: "og:description", content: "Strategy, content and growth plan for a sensitive-skin skincare brand." },
+    ],
+  }),
+  component: Portfolio,
+});
