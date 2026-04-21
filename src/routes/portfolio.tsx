@@ -21,19 +21,19 @@ const samples = [
   {
     src: work1,
     title: "Gentle Routine",
-    caption: "POV: a gentle routine that actually works ✨ Self-care shouldn't be stressful — just hydration and gentle renewal.",
+    caption: "POV: a gentle routine that actually works ✨",
     likes: "1,284",
   },
   {
     src: work2,
     title: "Skin Myths",
-    caption: "5 things to stop doing in your PM routine ❌ Stop wasting product on these myths and start seeing real results.",
+    caption: "5 things to stop doing in your PM routine ❌",
     likes: "2,012",
   },
   {
     src: work3,
     title: "Hydration Hook",
-    caption: "Your skin is thirsty 💔 Type THIRSTY to grab the Hydro-Boost Serum and quench it for good.",
+    caption: "Your skin is thirsty 💔 Type THIRSTY for the serum.",
     likes: "956",
   },
 ];
@@ -80,7 +80,7 @@ function PhoneMockup({ src, title, caption, likes }: { src: string; title: strin
           </div>
           <div className="px-3 pb-3 text-[10px] leading-snug text-foreground">
             <div className="font-semibold">{likes} likes</div>
-            <div className="mt-0.5 text-foreground/80">
+            <div className="mt-0.5 text-foreground/80 break-words">
               <span className="font-semibold">lushglow.skin</span>{" "}
               <span className="text-foreground/70">{caption}</span>
             </div>
