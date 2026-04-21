@@ -156,5 +156,11 @@
     font-family: var(--font-serif);
     font-weight: 400;
     letter-spacing: -0.01em;
+    color: oklch(0.35 0.08 45); /* deep cocoa */
+  }
+
+  /* Eyebrow labels — small uppercase tracked text above headings */
+  .tracking-\[0\.25em\] {
+    color: oklch(0.5 0.12 45); /* warm caramel */
   }
 }
