@@ -224,17 +224,6 @@ function Portfolio() {
         </div>
       </section>
 
-      {/* Expected results */}
-      <section className="mt-14">
-        <div className="text-center max-w-2xl mx-auto">
-          <p className="text-sm uppercase tracking-[0.25em] text-muted-foreground">Insights · 60 days</p>
-          <h2 className="mt-3 font-serif text-3xl md:text-4xl text-foreground">Expected results</h2>
-        </div>
-        <div className="mt-10 flex justify-center">
-          <InsightsPhone />
-        </div>
-      </section>
-
       {/* Sample work */}
       <section className="mt-20">
         <div className="text-center max-w-2xl mx-auto">
@@ -257,6 +246,17 @@ function Portfolio() {
               </div>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* Expected results */}
+      <section className="mt-20">
+        <div className="text-center max-w-2xl mx-auto">
+          <p className="text-sm uppercase tracking-[0.25em] text-muted-foreground">Insights · 60 days</p>
+          <h2 className="mt-3 font-serif text-3xl md:text-4xl text-foreground">Expected results</h2>
+        </div>
+        <div className="mt-10 flex justify-center">
+          <InsightsPhone />
         </div>
       </section>
 
