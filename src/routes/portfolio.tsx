@@ -94,6 +94,99 @@ function PhoneMockup({ src, title, caption, likes }: { src: string; title: strin
   );
 }
 
+function InsightsPhone() {
+  const metrics = [
+    { label: "Followers", from: "300", to: "900+", change: "+200%" },
+    { label: "Reach", from: "12K", to: "36K", change: "3×" },
+    { label: "Engagement", from: "2.1%", to: "3.4%", change: "+60%" },
+  ];
+  const bars = [30, 42, 38, 55, 48, 70, 65, 82, 78, 95, 88, 100];
+  return (
+    <div className="relative mx-auto w-full max-w-[300px]">
+      <div className="relative rounded-[2.5rem] bg-foreground/95 p-2 shadow-[0_30px_60px_-20px_oklch(0.42_0.04_50/0.35)] ring-1 ring-foreground/10">
+        <div className="relative overflow-hidden rounded-[2rem] bg-background">
+          {/* Notch */}
+          <div className="absolute left-1/2 top-1.5 z-20 h-5 w-20 -translate-x-1/2 rounded-full bg-foreground/95" />
+          {/* Status bar */}
+          <div className="flex items-center justify-between px-5 pt-2 pb-1.5 text-[10px] font-medium text-foreground">
+            <span>9:41</span>
+            <span className="opacity-60">•••</span>
+          </div>
+          {/* IG Insights header */}
+          <div className="flex items-center justify-between border-b border-border/60 px-4 py-2.5">
+            <span className="text-foreground/70 text-base leading-none">‹</span>
+            <div className="text-[12px] font-semibold text-foreground">Insights</div>
+            <span className="text-foreground/70 text-base leading-none">↗</span>
+          </div>
+          {/* Range pills */}
+          <div className="flex gap-1.5 px-3 pt-3">
+            {["7 days", "30 days", "60 days", "90 days"].map((r) => (
+              <span
+                key={r}
+                className={`text-[9px] px-2 py-1 rounded-full ${r === "60 days" ? "bg-foreground text-background font-semibold" : "bg-muted text-muted-foreground"}`}
+              >
+                {r}
+              </span>
+            ))}
+          </div>
+          {/* Hero metric */}
+          <div className="px-4 pt-4 pb-2">
+            <div className="text-[10px] uppercase tracking-wider text-muted-foreground">Accounts reached</div>
+            <div className="mt-1 flex items-baseline gap-2">
+              <span className="font-serif text-4xl text-foreground">36,204</span>
+              <span className="inline-flex items-center gap-1 rounded-full bg-[oklch(0.92_0.06_140)] px-2 py-0.5 text-[9px] font-semibold text-[oklch(0.35_0.08_140)]">
+                ▲ 3×
+              </span>
+            </div>
+            {/* Bar chart */}
+            <div className="mt-3 flex h-16 items-end gap-1">
+              {bars.map((h, i) => (
+                <div
+                  key={i}
+                  className="flex-1 rounded-sm bg-gradient-to-t from-[oklch(0.82_0.06_60)] to-[oklch(0.55_0.12_45)]"
+                  style={{ height: `${h}%` }}
+                />
+              ))}
+            </div>
+            <div className="mt-1.5 flex justify-between text-[8px] text-muted-foreground uppercase tracking-wider">
+              <span>Day 1</span>
+              <span>Day 60</span>
+            </div>
+          </div>
+          {/* Metric list */}
+          <div className="border-t border-border/60 px-4 py-3 space-y-2.5">
+            {metrics.map((m) => (
+              <div key={m.label} className="flex items-center justify-between">
+                <div>
+                  <div className="text-[11px] font-semibold text-foreground">{m.label}</div>
+                  <div className="text-[9px] text-muted-foreground">
+                    <span className="line-through">{m.from}</span> → <span className="text-foreground">{m.to}</span>
+                  </div>
+                </div>
+                <span className="inline-flex items-center gap-1 rounded-full bg-[oklch(0.92_0.06_140)] px-2 py-0.5 text-[9px] font-semibold text-[oklch(0.35_0.08_140)]">
+                  ▲ {m.change}
+                </span>
+              </div>
+            ))}
+          </div>
+          {/* Bottom nav */}
+          <div className="flex items-center justify-around border-t border-border/60 py-2.5 text-[14px]">
+            <span aria-hidden>⌂</span>
+            <span aria-hidden>⌕</span>
+            <span aria-hidden>＋</span>
+            <span aria-hidden>♡</span>
+            <span aria-hidden className="h-4 w-4 rounded-full bg-[oklch(0.85_0.05_55)]" />
+          </div>
+          {/* Home indicator */}
+          <div className="flex justify-center pb-1.5">
+            <div className="h-1 w-24 rounded-full bg-foreground/40" />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 function Portfolio() {
   return (
     <div className="mx-auto max-w-5xl px-6 py-20">
