@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import heroImg from "@/assets/hero.jpg";
+import certificateImg from "@/assets/certificate-smm.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -25,9 +26,6 @@ function Index() {
             <h1 className="mt-4 font-serif text-5xl md:text-6xl leading-[1.05] text-foreground">
               An invitation to <em className="not-italic text-accent-foreground/80">elevate</em> your brand.
             </h1>
-            <p className="mt-6 text-lg text-muted-foreground max-w-md leading-relaxed">
-              I'm Asha — I help brands grow their online presence and build engaged communities through strategic content, consistent page management and meaningful audience engagement.
-            </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link to="/contact" className="rounded-full bg-primary text-primary-foreground px-7 py-3 text-sm hover:opacity-90 transition">
                 Work with me
@@ -70,6 +68,38 @@ function Index() {
               <p className="mt-3 text-muted-foreground leading-relaxed">{c.v}</p>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* Certification */}
+      <section className="mx-auto max-w-6xl px-6 py-20">
+        <div className="grid gap-10 md:grid-cols-2 items-center">
+          <div>
+            <p className="text-sm uppercase tracking-[0.25em] text-muted-foreground">Certification</p>
+            <h2 className="mt-3 font-serif text-4xl md:text-5xl text-foreground">Certified Social Media Manager</h2>
+            <p className="mt-5 text-muted-foreground leading-relaxed max-w-md">
+              Completed the Social Media Managers Workshop Training by Social Media Managers Africa (SMMAFRICA), held 25th–28th November 2025.
+            </p>
+            <a
+              href="/certificates/asha-tapkigen-smm.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex mt-7 rounded-full border border-border bg-background/60 px-7 py-3 text-sm text-foreground hover:bg-background transition"
+            >
+              View full certificate
+            </a>
+          </div>
+          <div className="relative">
+            <div className="absolute -inset-4 rounded-3xl" style={{ background: "var(--gradient-warm)", filter: "blur(40px)", opacity: 0.4 }} />
+            <a href="/certificates/asha-tapkigen-smm.pdf" target="_blank" rel="noopener noreferrer" className="block relative">
+              <img
+                src={certificateImg}
+                alt="Asha Tapkigen — Social Media Managers Africa certificate"
+                loading="lazy"
+                className="relative rounded-2xl w-full object-cover border border-border/60 shadow-[var(--shadow-soft)]"
+              />
+            </a>
+          </div>
         </div>
       </section>
 
