@@ -195,7 +195,16 @@ function Portfolio() {
           <p className="text-sm uppercase tracking-[0.25em] text-muted-foreground">Live work · TikTok</p>
           <h2 className="mt-3 font-serif text-3xl md:text-4xl text-foreground">Managing my own TikTok page</h2>
           <p className="mt-4 text-muted-foreground">
-            Real results from posts I planned, shot and published on my page.
+            Real results from posts I planned, shot and published on{" "}
+            <a
+              href="https://www.tiktok.com/@asha.xo._"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-foreground font-medium underline underline-offset-4 decoration-foreground/30 hover:decoration-foreground"
+            >
+              @asha.xo._
+            </a>
+            .
           </p>
         </div>
         <div className="mt-10 grid gap-10 md:grid-cols-2">
