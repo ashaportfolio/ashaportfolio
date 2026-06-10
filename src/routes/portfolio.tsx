@@ -6,6 +6,7 @@ import work2 from "@/assets/work-skin-myths.jpg";
 import work3 from "@/assets/work-thirsty.jpg";
 import tiktokViral from "@/assets/tiktok-viral.jpeg.asset.json";
 import tiktokSeries from "@/assets/tiktok-series.jpeg.asset.json";
+import creator from "@/assets/asha-creator.jpeg.asset.json";
 
 const samples = [
   {
@@ -194,18 +195,26 @@ function Portfolio() {
         <div className="text-center max-w-2xl mx-auto">
           <p className="text-sm uppercase tracking-[0.25em] text-muted-foreground">Live work · TikTok</p>
           <h2 className="mt-3 font-serif text-3xl md:text-4xl text-foreground">Managing my own TikTok page</h2>
-          <p className="mt-4 text-muted-foreground">
-            Real results from posts I planned, shot and published on{" "}
-            <a
-              href="https://www.tiktok.com/@asha.xo._"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-foreground font-medium underline underline-offset-4 decoration-foreground/30 hover:decoration-foreground"
-            >
-              @asha.xo._
-            </a>
-            .
-          </p>
+          <div className="mt-5 flex items-center justify-center gap-3">
+            <img
+              src={creator.url}
+              alt="Asha Tapkigen"
+              className="h-12 w-12 rounded-full object-cover ring-2 ring-background shadow-[var(--shadow-soft)]"
+              loading="lazy"
+            />
+            <p className="text-muted-foreground text-left">
+              Real results from posts I planned, shot and published on{" "}
+              <a
+                href="https://www.tiktok.com/@asha.xo._"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-foreground font-medium underline underline-offset-4 decoration-foreground/30 hover:decoration-foreground"
+              >
+                @asha.xo._
+              </a>
+              .
+            </p>
+          </div>
         </div>
         <div className="mt-10 grid gap-10 md:grid-cols-2">
           <figure className="flex flex-col items-center">
