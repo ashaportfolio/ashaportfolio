@@ -4,6 +4,8 @@ import logo from "@/assets/lushglow-logo.jpg";
 import work1 from "@/assets/work-gentle-routine.jpg";
 import work2 from "@/assets/work-skin-myths.jpg";
 import work3 from "@/assets/work-thirsty.jpg";
+import tiktokViral from "@/assets/tiktok-viral.jpeg.asset.json";
+import tiktokSeries from "@/assets/tiktok-series.jpeg.asset.json";
 
 const samples = [
   {
@@ -185,6 +187,48 @@ function Portfolio() {
         <p className="mt-5 text-muted-foreground text-lg">
           Gentle, affordable skincare for young women with sensitive skin.
         </p>
+      </div>
+
+      {/* Live TikTok work */}
+      <section className="mt-16 rounded-3xl border border-border/60 p-8 md:p-10 shadow-[var(--shadow-card)]" style={{ background: "var(--gradient-soft)" }}>
+        <div className="text-center max-w-2xl mx-auto">
+          <p className="text-sm uppercase tracking-[0.25em] text-muted-foreground">Live work · TikTok</p>
+          <h2 className="mt-3 font-serif text-3xl md:text-4xl text-foreground">Managing my own TikTok page</h2>
+          <p className="mt-4 text-muted-foreground">
+            Real results from posts I planned, shot and published on my page.
+          </p>
+        </div>
+        <div className="mt-10 grid gap-10 md:grid-cols-2">
+          <figure className="flex flex-col items-center">
+            <img
+              src={tiktokViral.url}
+              alt="TikTok analytics: 2.9M views and 2,974 new followers from a viral post"
+              className="w-full max-w-[260px] rounded-2xl shadow-[var(--shadow-soft)]"
+              loading="lazy"
+            />
+            <figcaption className="mt-4 text-center text-muted-foreground text-sm max-w-xs">
+              <span className="block font-serif text-lg text-foreground">2.9M views · 2,974 new followers</span>
+              I leveraged a viral trending sound — the post broke out and brought in over 2K new followers in days.
+            </figcaption>
+          </figure>
+          <figure className="flex flex-col items-center">
+            <img
+              src={tiktokSeries.url}
+              alt="TikTok analytics: 7,562 views with 41% average retention from a series post"
+              className="w-full max-w-[260px] rounded-2xl shadow-[var(--shadow-soft)]"
+              loading="lazy"
+            />
+            <figcaption className="mt-4 text-center text-muted-foreground text-sm max-w-xs">
+              <span className="block font-serif text-lg text-foreground">7,562 views · 41% avg. retention</span>
+              Part of a content series I started — strong watch-through proves the hook and storyline are landing.
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <div className="mt-20 text-center max-w-2xl mx-auto">
+        <p className="text-sm uppercase tracking-[0.25em] text-muted-foreground">Case Study</p>
+        <h2 className="mt-3 font-serif text-3xl text-foreground">A brand strategy concept</h2>
       </div>
 
       {/* Brand card */}
