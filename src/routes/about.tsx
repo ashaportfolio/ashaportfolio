@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import portrait from "@/assets/portrait.jpg";
+import portrait from "@/assets/asha-portrait.jpeg.asset.json";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -17,7 +17,7 @@ function About() {
   return (
     <div className="mx-auto max-w-5xl px-6 py-20 grid gap-12 md:grid-cols-[1fr_1.3fr] items-start">
       <img
-        src={portrait}
+        src={portrait.url}
         alt="Portrait of Asha Tapkigen"
         width={1024}
         height={1280}
