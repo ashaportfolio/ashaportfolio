@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import heroImg from "@/assets/hero.jpg";
+import heroImg from "@/assets/asha-home-hero.jpeg.asset.json";
 import certificateImg from "@/assets/certificate-smm.jpg";
 
 export const Route = createFileRoute("/")({
@@ -38,11 +38,9 @@ function Index() {
           <div className="relative">
             <div className="absolute -inset-4 rounded-3xl" style={{ background: "var(--gradient-warm)", filter: "blur(40px)", opacity: 0.4 }} />
             <img
-              src={heroImg}
+              src={heroImg.url}
               alt="Asha Tapkigen, social media manager"
-              width={1536}
-              height={1152}
-              className="relative rounded-3xl object-cover w-full aspect-[4/3] shadow-[var(--shadow-soft)]"
+              className="relative rounded-3xl object-cover object-center w-full aspect-[4/5] shadow-[var(--shadow-soft)]"
             />
           </div>
         </div>
