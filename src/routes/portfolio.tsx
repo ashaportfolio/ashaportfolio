@@ -181,12 +181,12 @@ function InsightsPhone() {
 function Portfolio() {
   return (
     <div className="mx-auto max-w-5xl px-6 py-20">
-      {/* Header */}
+      {/* Page header */}
       <div className="text-center max-w-2xl mx-auto">
-        <p className="text-sm uppercase tracking-[0.25em] text-muted-foreground">Case Study</p>
-        <h1 className="mt-3 font-serif text-5xl text-foreground">LushGlow Skincare</h1>
+        <p className="text-sm uppercase tracking-[0.25em] text-muted-foreground">Portfolio</p>
+        <h1 className="mt-3 font-serif text-5xl text-foreground">Selected work</h1>
         <p className="mt-5 text-muted-foreground text-lg">
-          Gentle, affordable skincare for young women with sensitive skin.
+          Real results from my own page, plus a brand strategy case study.
         </p>
       </div>
 
@@ -244,9 +244,12 @@ function Portfolio() {
         </div>
       </section>
 
-      <div className="mt-20 text-center max-w-2xl mx-auto">
+      <div className="mt-24 text-center max-w-2xl mx-auto">
         <p className="text-sm uppercase tracking-[0.25em] text-muted-foreground">Case Study</p>
-        <h2 className="mt-3 font-serif text-3xl text-foreground">A brand strategy concept</h2>
+        <h2 className="mt-3 font-serif text-4xl md:text-5xl text-foreground">LushGlow Skincare</h2>
+        <p className="mt-5 text-muted-foreground text-lg">
+          A brand strategy concept — gentle, affordable skincare for young women with sensitive skin.
+        </p>
       </div>
 
       {/* Brand card */}
