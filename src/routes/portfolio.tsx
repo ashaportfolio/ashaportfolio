@@ -7,6 +7,7 @@ import work3 from "@/assets/work-thirsty.jpg";
 import tiktokViral from "@/assets/tiktok-viral.jpeg.asset.json";
 import tiktokSeries from "@/assets/tiktok-series.jpeg.asset.json";
 import creator from "@/assets/asha-creator.jpeg.asset.json";
+import palms from "@/assets/asha-palms.jpeg.asset.json";
 
 const samples = [
   {
@@ -188,6 +189,16 @@ function Portfolio() {
         <p className="mt-5 text-muted-foreground text-lg">
           Real results from my own page, plus a brand strategy case study.
         </p>
+      </div>
+
+      {/* Intro portrait */}
+      <div className="mt-12 mx-auto max-w-3xl">
+        <img
+          src={palms.url}
+          alt="Asha Tapkigen"
+          loading="lazy"
+          className="w-full rounded-3xl object-cover aspect-[4/3] shadow-[var(--shadow-soft)]"
+        />
       </div>
 
       {/* Live TikTok work */}
