@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Contact — Asha Tapkigen</title>
+<meta name="description" content="Get in touch to discuss your brand, your goals and how we can grow your social presence together." />
+<meta property="og:title" content="Contact — Asha Tapkigen" />
+<meta property="og:description" content="Let's create something beautiful together." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header class="site-header">
+  <div class="inner">
+    <a href="index.html" class="logo">Asha <span>Tapkigen</span></a>
+    <nav class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="portfolio.html">Case Study</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+    <a href="contact.html" class="btn btn-primary header-cta">Let's talk</a>
+  </div>
+</header>
+<main class="contact-wrap">
+  <div class="contact-bg"></div>
+  <div class="narrow center" style="padding:6rem 1.5rem;">
+    <p class="eyebrow">Contact</p>
+    <h1 class="h1">Let's create together</h1>
+    <p class="lead" style="max-width:520px; margin-left:auto; margin-right:auto;">Tell me about your brand and what you're hoping to build. I usually reply within two working days.</p>
+    <form class="form" onsubmit="event.preventDefault(); var f=event.target; window.location.href='mailto:ashatapkigensmm@gmail.com?subject=New%20enquiry%20from%20'+encodeURIComponent(f.fullname.value)+'&body='+encodeURIComponent(f.message.value);">
+      <div class="form-row">
+        <label><span>Name</span><input name="fullname" required /></label>
+        <label><span>Email</span><input name="email" type="email" required /></label>
+      </div>
+      <label><span>Brand / Instagram</span><input name="brand" /></label>
+      <label><span>Tell me about your project</span><textarea name="message" rows="5" required></textarea></label>
+      <button type="submit" class="btn btn-primary">Send enquiry</button>
+    </form>
+    <div style="margin-top:2.5rem; font-size:0.9rem; color:var(--muted); display:grid; gap:0.5rem;">
+      <p>Or email me directly at <a href="mailto:ashatapkigensmm@gmail.com" style="color:var(--fg); text-decoration:underline; text-underline-offset:4px;">ashatapkigensmm@gmail.com</a></p>
+      <p>Call or WhatsApp: <a href="tel:+254710635834" style="color:var(--fg); text-decoration:underline; text-underline-offset:4px;">+254 710 635 834</a></p>
+    </div>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="inner">
+    <div><h4>Asha Tapkigen</h4><p style="margin-top:0.5rem;">An invitation to elevate your brand.</p></div>
+    <div class="col"><p>Explore</p><div class="col-links"><a href="about.html">About</a><a href="services.html">Services</a><a href="portfolio.html">Case Study</a><a href="contact.html">Contact</a></div></div>
+    <div class="col"><p>Connect</p><div class="col-links"><a href="mailto:ashatapkigensmm@gmail.com">ashatapkigensmm@gmail.com</a><a href="tel:+254710635834">+254 710 635 834</a></div></div>
+  </div>
+  <div class="copyright">© 2026 Asha Tapkigen. Crafted with care.</div>
+</footer>
+</body>
+</html>
