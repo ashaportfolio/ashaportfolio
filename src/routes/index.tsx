@@ -2,6 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import heroImg from "@/assets/asha-pink.jpeg.asset.json";
 import certificateImg from "@/assets/certificate-smm.jpg";
 import crmCertificate from "@/assets/certificate-crm.jpg.asset.json";
+import hubspotCertificate from "@/assets/certificate-hubspot.jpg.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -76,7 +77,7 @@ function Index() {
           <p className="text-sm uppercase tracking-[0.25em] text-muted-foreground">Certifications</p>
           <h2 className="mt-3 font-serif text-4xl md:text-5xl text-foreground">Trained &amp; certified</h2>
         </div>
-        <div className="mt-14 grid gap-10 md:grid-cols-2">
+        <div className="mt-14 grid gap-10 md:grid-cols-2 lg:grid-cols-3">
           {[
             {
               img: certificateImg,
@@ -91,6 +92,13 @@ function Index() {
               title: "CRM Basics: Business Growth through Relationships",
               body: "Course completion certificate — customer relationship management fundamentals for building lasting client and community relationships.",
               alt: "Asha Tapkigen — CRM Basics course completion certificate",
+            },
+            {
+              img: hubspotCertificate.url,
+              pdf: "/certificates/asha-tapkigen-hubspot.pdf",
+              title: "Learning HubSpot CRM",
+              body: "Course completion certificate — managing contacts, pipelines and customer data in HubSpot CRM to keep client relationships organised.",
+              alt: "Asha Tapkigen — Learning HubSpot CRM course completion certificate",
             },
           ].map((c) => (
             <div key={c.title} className="rounded-3xl bg-card border border-border/60 p-6 shadow-[var(--shadow-card)]">
